@@ -410,11 +410,14 @@
 @media (max-width: 376px) {
   .header {
     justify-content: start;
-    padding-block-start: 120px;
+  }
+  .header__logo-group {
+    margin-block-start: 120px;
+
   }
   .theme-menu {
     padding-block-start: 20px;
-    padding-block-end: 0;
+    padding-block-end: 25px;
   }
 
   .card {
