@@ -289,6 +289,16 @@
   height: 38px;
 }
 
+.card__icon-button:focus {
+  outline: transparent;
+}
+
+.card__icon-button:focus-visible {
+  border: solid 2px var(--accent-color);
+  outline: transparent;
+}
+
+
 .card__like-button {
   background-color: transparent;
   width: 130px;
@@ -313,6 +323,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-inline: auto;
   margin-block-end: 100px;
 }
 
@@ -401,6 +412,11 @@
   translate: -100%;
   background-color: var(--accent-color);
   content: "";
+  transition: translate 0.5s ease-in-out;
+}
+
+.button__animation:hover::before {
+  translate: 0;
 }
 
 .sparks {
